@@ -1,0 +1,52 @@
+.weather {
+  display: block;
+  border: 1px solid #9ce3cf;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #9ce3cf;
+}
+
+form {
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.btn-info {
+  background-color: #6a7ff5;
+  border: 1px solid #6a7ff5;
+  color: #f7f4ea;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-info:hover {
+  background-color: #6a7ff5;
+  border: 1px solid #6a7ff5;
+  color: #f7f4ea;
+  opacity: 80%;
+}
+
+.btn-success {
+  background-color: #574b9b;
+  border: 1px solid #574b9b;
+  color: #f7f4ea;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #574b9b;
+  border: 1px solid #574b9b;
+  color: #f7f4ea;
+  opacity: 80%;
+}
+
+.float-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#cityInput {
+  background-color: #f7f4ea;
+}

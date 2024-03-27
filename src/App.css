@@ -1,0 +1,16 @@
+body {
+  font-family: "Arimo", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
+  background-color: #f7f4ea;
+  color: #574b9b;
+}
+
+.app-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.app-wrapper footer {
+  display: block;
+  padding-top: 10px;
+}
