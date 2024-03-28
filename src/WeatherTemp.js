@@ -24,7 +24,7 @@ export default function WeatherTemp(props) {
         {unit === "celsius" ? (
           "°C"
         ) : (
-          <a href="#" onClick={convertToC}>
+          <a href="/" onClick={convertToC}>
             °C
           </a>
         )}{" "}
@@ -32,7 +32,7 @@ export default function WeatherTemp(props) {
         {unit === "fahrenheit" ? (
           "°F"
         ) : (
-          <a href="#" onClick={convertToF}>
+          <a href="/" onClick={convertToF}>
             °F
           </a>
         )}

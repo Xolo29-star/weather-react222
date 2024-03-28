@@ -11,7 +11,11 @@ function App() {
           <footer>
             This project was coded by <span>Alessya Krapivina</span>
             and is{" "}
-            <a href="https://github.com/alessyak/weather-react" target="_blank">
+            <a
+              href="https://github.com/alessyak/weather-react"
+              target="_blank"
+              rel="noreferrer"
+            >
               open-sourced on GitHub
             </a>
           </footer>
