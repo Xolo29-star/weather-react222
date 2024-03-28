@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
+import DailyForecast from "./DailyForecast";
 
 export default function Weather(props) {
-  const apiKey = "96771e971243152d6b8948878c26adde";
+  //const apiKey = "96771e971243152d6b8948878c26adde";
+  const apiKey = "bd5b4461863eddaa6ced0a0a67989e0a";
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather?";
 
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,6 +16,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
+      coords: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temp: response.data.main.temp,
       humidity: response.data.main.humidity,
@@ -43,7 +46,7 @@ export default function Weather(props) {
       <div className="weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6">
+            <div className="col-9">
               <input
                 type="search"
                 name="city"
@@ -51,7 +54,6 @@ export default function Weather(props) {
                 placeholder="Enter your city"
                 id="cityInput"
                 autocomplete="off"
-                className="form-control"
                 onChange={handleCityChange}
               />
             </div>
@@ -60,14 +62,15 @@ export default function Weather(props) {
                 Search
               </button>
             </div>
-            <div className="col-3">
+            {/* <div className="col-3">
               <button type="button" className="btn btn-success w-100">
                 Current
               </button>
-            </div>
+            </div> */}
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <DailyForecast coords={weatherData.coords} />
       </div>
     );
   } else {

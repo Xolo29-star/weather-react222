@@ -10,6 +10,18 @@
   color: #5a6275;
 }
 
+.currentCity {
+  padding: 10px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-right: 0;
+  text-align: right;
+}
+
+.currentCity h6 {
+  color: #5a6275;
+}
+
 #icon {
   padding: 0;
   margin: 0;

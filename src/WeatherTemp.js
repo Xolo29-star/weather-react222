@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React /* , { useState } */ from "react";
 import "./WeatherTemp.css";
 
 export default function WeatherTemp(props) {
-  const [unit, setUnit] = useState("celsius");
+  return (
+    <>
+      <strong id="temp">{Math.round(props.celsius)}</strong>
+      <span className="units">°C</span>
+    </>
+  );
+
+  /* const [unit, setUnit] = useState("celsius");
   const [temp, setTemp] = useState(props.celsius);
 
   function convertToC(event) {
@@ -38,5 +45,5 @@ export default function WeatherTemp(props) {
         )}
       </span>
     </>
-  );
+  ); */
 }
