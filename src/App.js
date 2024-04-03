@@ -9,10 +9,10 @@ export default function App() {
         <div className="app-wrapper">
           <Weather defaultCity="Toronto" />
           <footer>
-            This project was coded by <span>Alessya Krapivina</span>
+            This project was coded by <span>Noxolo Gama</span>
             and is{" "}
             <a
-              href="https://github.com/alessyak/weather-react"
+              href="https://github.com/Xolo29-star/weather-react222"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
